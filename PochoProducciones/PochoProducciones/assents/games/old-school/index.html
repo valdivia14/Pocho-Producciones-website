@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Old School — Pocho Producciones</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .hero {
+      background: linear-gradient(180deg, #111 0%, #1f1f1f 100%);
+      color: #fff;
+      padding: 72px 0;
+    }
+    .overlay-dark::before{ content:""; position:absolute; inset:0; background:rgba(0,0,0,.35); }
+    footer a { text-decoration: none }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="../../../index.html">
+        <i class="bi bi-controller"></i> <span>Pocho Producciones</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../../../index.html#games" id="navGames">Juegos</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../../index.html#about" id="navAbout">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../../index.html#contact" id="navContact">Contacto</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="../../../index.html" class="btn btn-outline-light btn-sm" id="navHomeBtn">Inicio</a>
+          <button id="langBtn" class="btn btn-outline-light btn-sm">🌐 Español</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+    <header class="hero text-center position-relative" style="background: url('../../../assents/oldschool/oldschool1.png') center/cover no-repeat; position: relative;">
+    <div class="container position-relative" style="z-index: 1;">
+        <h1 class="display-6 fw-bold text-white" id="heroTitle">Old School</h1>
+        <p class="lead mt-2 text-white" id="heroSubtitle">
+        Compilado de minijuegos retro: rápidos, competitivos y con sabor pixel art.
+        </p>
+        <div class="mt-3 d-flex justify-content-center gap-2">
+        <a href="#" class="btn btn-primary btn-lg" id="dlBtn1"><i class="bi bi-download"></i> Descargar</a>
+        <a href="../../../index.html#games" class="btn btn-outline-light btn-lg" id="backBtn">Volver a juegos</a>
+        </div>
+    </div>
+    <!-- Overlay oscuro para contraste -->
+    <div style="position:absolute; inset:0; background:rgba(0,0,0,.45); z-index:0;"></div>
+    </header>
+
+
+  <!-- CONTENIDO -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <!-- Texto -->
+        <div class="col-12 col-lg-7">
+          <h2 class="mb-3" id="aboutGameTitle">Sobre el juego</h2>
+          <p id="aboutGameText1">
+            <strong>Old School</strong> reúne minijuegos clásicos reimaginados para partidas cortas
+            y súper adictivas. Ideal para jugar solo o en pantalla compartida con amigos y familia.
+          </p>
+          <ul class="mb-3" id="featureList">
+            <li>Modo local: partidas rápidas y competitivas.</li>
+            <li>10+ minijuegos con mecánicas simples y directas.</li>
+            <li>Estética pixel art y música retro.</li>
+            <li>Dificultad progresiva y desafíos diarios.</li>
+            <li>Ads responsables: solo entre partidas (AdMob) + age gate.</li>
+          </ul>
+          <p id="aboutGameText2">
+            Optimizamos rendimiento para móviles y tablets; controles táctiles pensados para todas las edades.
+            ¡Volvé a lo retro con una vuelta de tuerca moderna!
+          </p>
+        </div>
+
+        <!-- Media + botones -->
+        <div class="col-12 col-lg-5">
+          <!-- Video -->
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+            <!-- reemplazá VIDEO_ID -->
+            <iframe id="ytFrame" src="https://youtu.be/Axrkczu9wuI" title="Old School Trailer" allowfullscreen></iframe>
+          </div>
+
+          <!-- Carrusel -->
+          <div id="shots" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="8000">
+            <div class="carousel-inner rounded shadow-sm">
+            <div class="carousel-item active">
+                <img src="../../../assents/oldschool/oldschool1.png" class="d-block w-100" alt="Screenshot 1">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assents/oldschool/oldschool2.png" class="d-block w-100" alt="Screenshot 2">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assents/oldschool/oldschool3.png" class="d-block w-100" alt="Screenshot 3">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assents/oldschool/oldschool4.png" class="d-block w-100" alt="Nueva Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assents/oldschool/oldschool5.png" class="d-block w-100" alt="Nueva Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assents/oldschool/oldschool6.png" class="d-block w-100" alt="Nueva Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="../../../assents/oldschool/oldschool7.png" class="d-block w-100" alt="Nueva Imagen 4">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#shots" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#shots" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+          <!-- Botones -->
+          <div class="d-grid gap-2 mt-3">
+            <a href="#" class="btn btn-outline-primary" id="dlBtn2"><i class="bi bi-shop"></i> Aptoide</a>
+            <a href="#" class="btn btn-outline-primary" id="dlBtn3"><i class="bi bi-box-arrow-down"></i> Uptodown</a>
+            <!-- Legal (si tenés una página específica para Old School, cambiala a ../../legal/old-school.html) -->
+            <a href="../../../legal/index_oldschool.html" class="btn btn-outline-secondary" id="legalBtn">
+              <i class="bi bi-file-earmark-text"></i> Términos y Privacidad
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- CONTACTO -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="mb-3" id="contactTitle">Contacto</h2>
+      <p class="mb-4" id="contactLead">
+        ¿Querés publicar, testear o colaborar? Escribinos:
+      </p>
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="p-4 border rounded-3 h-100">
+            <h5 class="fw-semibold mb-2" id="contactEmailTitle"><i class="bi bi-envelope"></i> Email</h5>
+            <p class="mb-0">
+              <a href="mailto:pochoproducciones40@gmail.com" id="contactEmailLink">pochoproducciones40@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="p-4 border rounded-3 h-100">
+            <h5 class="fw-semibold mb-2"><i class="bi bi-people"></i> <span id="contactSocialsTitle">Redes</span></h5>
+            <div class="d-flex gap-3">
+            <a href="https://www.youtube.com/channel/UCt0uj_DW7CzbjXABg7QBcqQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-danger"><i class="bi bi-youtube fs-4"></i></a>
+            <a href="https://www.instagram.com/pochoproducciones1?igsh=ZzBvZHE3aW1ibWw0" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-dark"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="https://www.tiktok.com/@pochoproducciones?_t=ZM-8zSDP8CyM8U&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="text-dark"><i class="bi bi-tiktok fs-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white-50">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <small id="footerCopy">© 2025 Pocho Producciones. Todos los derechos reservados.</small>
+      <small><a class="link-light" href="../../legal/index.html" id="footerPrivacy">Política de Privacidad</a></small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Idiomas -->
+  <script>
+    const T = {
+      es: {
+        navGames:"Juegos", navAbout:"Nosotros", navContact:"Contacto", navHomeBtn:"Inicio", btn:"🌐 Español",
+        heroTitle:"Old School",
+        heroSubtitle:"Compilado de minijuegos retro: rápidos, competitivos y con sabor pixel art.",
+        backBtn:"Volver a juegos",
+        dlBtn1:"Descargar",
+        aboutGameTitle:"Sobre el juego",
+        aboutGameText1:"Old School reúne minijuegos clásicos reimaginados para partidas cortas y súper adictivas. Ideal para jugar solo o en pantalla compartida con amigos y familia.",
+        featureListHTML:`<li>Modo local: partidas rápidas y competitivas.</li>
+                         <li>10+ minijuegos con mecánicas simples y directas.</li>
+                         <li>Estética pixel art y música retro.</li>
+                         <li>Dificultad progresiva y desafíos diarios.</li>
+                         <li>Ads responsables: solo entre partidas (AdMob) + age gate.</li>`,
+        aboutGameText2:"Optimizamos rendimiento para móviles y tablets; controles táctiles pensados para todas las edades. ¡Volvé a lo retro con una vuelta de tuerca moderna!",
+        dlBtn2:"Aptoide", dlBtn3:"Uptodown", legalBtn:"Términos y Privacidad",
+        contactTitle:"Contacto", contactLead:"¿Querés publicar, testear o colaborar? Escribinos:",
+        contactEmailTitle:"Email", contactEmailLink:"pochoproducciones40@gmail.com", contactSocialsTitle:"Redes",
+        footerCopy:"© 2025 Pocho Producciones. Todos los derechos reservados.", footerPrivacy:"Política de Privacidad"
+      },
+      en: {
+        navGames:"Games", navAbout:"About", navContact:"Contact", navHomeBtn:"Home", btn:"🌐 English",
+        heroTitle:"Old School",
+        heroSubtitle:"A collection of retro minigames: fast, competitive, and pixel-art flavored.",
+        backBtn:"Back to games",
+        dlBtn1:"Download",
+        aboutGameTitle:"About the game",
+        aboutGameText1:"Old School brings classic minigames reimagined for short, super-addictive sessions. Perfect for solo play or shared screen with friends and family.",
+        featureListHTML:`<li>Local mode: quick, competitive matches.</li>
+                         <li>10+ minigames with simple, straightforward mechanics.</li>
+                         <li>Pixel-art aesthetics and retro music.</li>
+                         <li>Progressive difficulty and daily challenges.</li>
+                         <li>Responsible ads: only between matches (AdMob) + age gate.</li>`,
+        aboutGameText2:"We optimize performance for phones and tablets; touch controls designed for all ages. Go retro with a modern twist!",
+        dlBtn2:"Aptoide", dlBtn3:"Uptodown", legalBtn:"Terms & Privacy",
+        contactTitle:"Contact", contactLead:"Want to publish, test or collaborate? Write us:",
+        contactEmailTitle:"Email", contactEmailLink:"pochoproducciones40@gmail.com", contactSocialsTitle:"Socials",
+        footerCopy:"© 2025 Pocho Producciones. All rights reserved.", footerPrivacy:"Privacy Policy"
+      }
+    };
+
+    let lang = "es";
+    const idsText = [
+      "navGames","navAbout","navContact","navHomeBtn","heroTitle","heroSubtitle","backBtn",
+      "dlBtn1","aboutGameTitle","aboutGameText1","aboutGameText2",
+      "dlBtn2","dlBtn3","legalBtn","contactTitle","contactLead",
+      "contactEmailTitle","contactEmailLink","contactSocialsTitle","footerCopy","footerPrivacy"
+    ];
+
+    function applyLang(l) {
+      const t = T[l];
+      document.getElementById("langBtn").innerText = t.btn;
+      idsText.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (id === "contactEmailLink") {
+          el.textContent = t[id];
+          el.setAttribute("href", "mailto:" + t[id]);
+        } else {
+          el.textContent = t[id];
+        }
+      });
+      document.getElementById("featureList").innerHTML = t.featureListHTML;
+    }
+
+    document.getElementById("langBtn").addEventListener("click", () => {
+      lang = (lang === "es") ? "en" : "es";
+      applyLang(lang);
+    });
+
+    applyLang(lang);
+  </script>
+</body>
+</html>
